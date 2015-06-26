@@ -2,7 +2,7 @@ About
 -----------------------------------------------------------------------------------------
 
 Product: Ztrint Table Exporter
-Description: a very simple jquery plugin that allows export html tables to txt and csv.
+Description: a very simple jquery plugin that allows export html tables to *txt*, *csv* and *MS Excel*.
 Author: Nicolas Castro - nrctkno@gmail.com
 
 Special thanks to the stackoverflow community and my colleagues.
