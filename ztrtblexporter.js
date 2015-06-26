@@ -1,4 +1,4 @@
-/*! Ztrint table exporter v0.0.1 | (c) 2015 Nicolas Castro | ztrint.com/products/ztrtblexporter */
+/*! Ztrint/TableExporter.js v0.0.1 | (c) 2015 Nicolas Castro | https://github.com/Ztrint/TableExporter.js */
 
 (function ($) {
 
