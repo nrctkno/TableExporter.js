@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--
+Ztrint/TableExporter.js v0.0.1 | (c) 2015 Nicolas Castro | https://github.com/Ztrint/TableExporter.js
+-->
+<html>
+  <head>
+    <title>TableExporter.js samples</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> 
+    <script type="text/javascript" src="../ztrtblexporter.js"></script>
+    <link rel="stylesheet"  href='ztrtblexporter.css' type='text/css' media='all' />
+    <style>
+      body{font-family: 'Arial', sans-serif;}
+      table{border-collapse: collapse;}
+      th,td{border: 1px solid #ccc;}
+    </style>
+    <script>
+      $(document).ready(function () {
+        $('.mytableclass').ZtrintTableExporter({
+          filename: 'My very first exported table'   //the filename prefix (the extension is automatic)
+          , title: 'Export my "beautiful" table to '   //the title shown in link's mouse hover event
+          , formats: ['txt', 'csv', 'xls']           //you can choose txt, csv or both (by default)
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1><a target="_blank" href="https://github.com/Ztrint/TableExporter.js">Ztrint/TableExporter.js v0.0.1</a> examples</h1>
+
+    <p>Hint: place the pointer over a table.</p>
+
+    <h2>Using &lt;thead&gt; and &lt;tbody&gt; structure:</h2>
+
+    <table class="mytableclass" id="table1">
+      <thead>
+        <tr>
+          <th>Number</th>
+          <th>First Name</th>
+          <th>Last Name</th>		
+          <th>Points</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Eve</td>
+          <td>Jackson</td>		
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>John</td>
+          <td>Doe</td>		
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Adam</td>
+          <td>Johnson</td>		
+          <td>67</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Using &lt;tr&gt; only structure (it looks the same but it is not):</h2>
+
+    <table class="mytableclass" id="table2">
+      <tr>
+        <th>Number</th>
+        <th>First Name</th>
+        <th>Last Name</th>		
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Eve</td>
+        <td>Jackson</td>		
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>John</td>
+        <td>Doe</td>		
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Adam</td>
+        <td>Johnson</td>		
+        <td>67</td>
+      </tr>
+    </table>
+
+
+    <h2>Using &lt;colspan&gt; and &lt;rowspan&gt;:</h2>
+
+    <table class="mytableclass" id="table3">
+      <tr>
+        <th rowspan="2">Number</th>
+        <th colspan="2">Name</th>
+        <th rowspan="2">Points</th>
+      </tr>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>		
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Eve</td>
+        <td>Jackson</td>		
+        <td>94</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>John</td>
+        <td>Doe</td>		
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Adam</td>
+        <td>Johnson</td>		
+        <td>67</td>
+      </tr>
+    </table>
+
+    <br />
+    <br />
+    <br />
+
+    <span>Table data provided by <a href="http://www.w3schools.com/html/html_tables.asp">w3schools</a></span>
+  </body>
+</html>
