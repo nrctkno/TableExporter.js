@@ -1,9 +1,7 @@
 About
 -----------------------------------------------------------------------------------------
 
-Product: Ztrint Table Exporter
-Description: a very simple jquery plugin that allows export html tables to *txt*, *csv* and *MS Excel*.
-Author: Nicolas Castro - nrctkno@gmail.com
+This is a very simple jQuery plugin that allows export html tables to *txt*, *csv* and *MS Excel*.
 
 Special thanks to the stackoverflow community and my colleagues.
 
@@ -15,7 +13,13 @@ JQuery 2.x, that´s all.
 Usage
 -----------------------------------------------------------------------------------------
 
-Tables MUST have an id attribute.
+Tables MUST have an *id* attribute.
+
+Import the script:
+
+```html
+  <script type="text/javascript" src="/ztrtblexporter.js"></script>
+```
 
 Add this to your .js:
 
